@@ -78,6 +78,23 @@ h1 {
     transform: rotate(30deg);
 }
 
+/* Icon styles using pseudo-elements */
+.icon-moon::before {
+    content: "🌙";
+    font-style: normal;
+}
+
+.icon-sun::before {
+    content: "☀️";
+    font-style: normal;
+}
+
+.icon-chevron-down::before {
+    content: "▼";
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
 .faq-container {
     background-color: var(--card-bg);
     border-radius: 12px;
@@ -198,6 +215,10 @@ footer {
     margin-top: 40px;
     padding: 20px;
     color: var(--secondary-color);
+}
+
+.heart {
+    color: #e74c3c;
 }
 
 @media (max-width: 768px) {
